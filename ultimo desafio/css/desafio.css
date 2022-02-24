@@ -1,0 +1,524 @@
+/*home*/
+
+#dios {
+  background-image: linear-gradient(rgb(241, 241, 241), rgb(125, 54, 240));
+}
+
+nav ul {
+  background-color: rgba(255, 255, 255, 0.534);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin-bottom: -11px;
+  list-style: none;
+}
+
+.navcolor {
+  flex-direction: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 20px;
+  font-size: 30px;
+  letter-spacing: 27px;
+  font-family: fantasy;
+  transition: color 1s;
+  transition: border 1s;
+}
+
+.navcolor:hover {
+  color: rgb(16, 128, 180);
+  border: solid;
+}
+
+header {
+  background-image: linear-gradient(rgb(15, 98, 146), rgb(79, 16, 180));
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+}
+
+#titulo {
+  margin-top: 25px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 1cm;
+  font-size: 150px;
+}
+
+#subtitulouno {
+  margin-top: -40px;
+  margin-bottom: -30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 1cm;
+  letter-spacing: 1cm;
+  font-size: 30px;
+  font-style: italic;
+}
+
+/*IMAGENES CATALOGO*/
+
+#catalogo {
+  background-color: rgb (7, 6, 7);
+  display: grid;
+  height: 800px;
+  width: 800px;
+  grid-template-columns: 50% 50% 50% 50%;
+  grid-template-rows: 50% 50% 50% 50%;
+  gap: 1em;
+  grid-template-areas:
+    "foto1 foto2 foto5 foto7"
+    "foto3 foto4 foto6 foto8";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#camperamoto {
+  text-align: center;
+  color: rgb(49, 134, 204);
+  grid-area: foto1;
+  height: 300px;
+  width: 300px;
+  transition: border solid 1s;
+  padding-bottom: 100px;
+}
+
+#camperamoto:hover {
+  border: solid 2px;
+}
+
+#busoo {
+  text-align: center;
+  color: rgb(49, 134, 204);
+  grid-area: foto2;
+  height: 300px;
+  width: 300px;
+  transition: border solid 1s;
+  padding-bottom: 100px;
+}
+
+#busoo:hover {
+  border: solid 2px;
+}
+
+#pantalones {
+  text-align: center;
+  color: rgb(49, 134, 204);
+  grid-area: foto3;
+  height: 300px;
+  width: 300px;
+  transition: border solid 1s;
+  padding-bottom: 100px;
+}
+
+#pantalones:hover {
+  border: solid 2px;
+}
+
+#pantalonesdos {
+  text-align: center;
+  color: rgb(49, 134, 204);
+  grid-area: foto4;
+  height: 300px;
+  width: 300px;
+  transition: border solid 1s;
+  padding-bottom: 100px;
+}
+
+#pantalonesdos:hover {
+  border: solid 2px;
+}
+
+#pantalonescinco {
+  text-align: center;
+  color: rgb(49, 134, 204);
+  grid-area: foto5;
+  height: 300px;
+  width: 300px;
+  transition: border solid 1s;
+  padding-bottom: 100px;
+}
+
+#pantalonescinco:hover {
+  border: solid 2px;
+}
+
+#pantalonesseis {
+  text-align: center;
+  color: rgb(49, 134, 204);
+  grid-area: foto6;
+  height: 300px;
+  width: 300px;
+  transition: border solid 1s;
+  padding-bottom: 100px;
+}
+
+#pantalonesseis:hover {
+  border: solid 2px;
+}
+
+#pantalonessiete {
+  text-align: center;
+  color: rgb(49, 134, 204);
+  grid-area: foto7;
+  height: 300px;
+  width: 300px;
+  transition: border solid 1s;
+  padding-bottom: 100px;
+}
+
+#pantalonessiete:hover {
+  border: solid 2px;
+}
+
+#pantalonesocho {
+  text-align: center;
+  color: rgb(49, 134, 204);
+  grid-area: foto8;
+  height: 300px;
+  width: 300px;
+  transition: border solid 1s;
+  padding-bottom: 100px;
+}
+
+#pantalonesocho:hover {
+  border: solid 2px;
+}
+
+/*CAMPERAS Y PANTALONES*/
+
+.colorconvinar {
+  background-image: linear-gradient(rgb(79, 16, 180), rgb(15, 98, 146));
+  border: solid 2px;
+  margin-top: 50px;
+}
+
+#subtitulodos {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 80px;
+  font-size: 50px;
+  letter-spacing: 20px;
+}
+
+#camperapantalon {
+  background-color: rgb (7, 6, 7);
+  display: grid;
+  height: 1300px;
+  grid-template-rows: 10% 10%;
+  grid-template-areas:
+    "foto3"
+    "foto1";
+  justify-items: stretch;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+/*SLIDER*/
+
+.menu {
+  list-style: none;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  padding-right: 100px;
+  margin-bottom: -100px;
+}
+
+.menu li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+ul.slider {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  list-style: none;
+  align-items: center;
+}
+
+ul.slider li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  transition: opacity 0.5s;
+}
+
+ul.slider li img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+  opacity: 1;
+}
+
+ul.slider li:target {
+  opacity: 1;
+}
+
+ul.slider li:first-child:hover {
+  height: 450px;
+  width: 450px;
+}
+
+#pantalon {
+  width: 400px;
+  height: 400px;
+  align-items: center;
+}
+
+#pantalon {
+  height: 450px;
+  width: 450px;
+}
+
+/*FIN SLIDER*/
+
+.terceraseccion {
+  background-color: rgba(77, 39, 202, 0.863);
+}
+
+#subtitulotres {
+  line-height: 50px;
+  padding-top: 100;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 1cm;
+  text-size-adjust: 20cm;
+  letter-spacing: 1cm;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+#sucursales {
+  background-color: rgb (7, 6, 7);
+  display: grid;
+  height: 950px;
+  grid-template-columns: 45% 45%;
+  grid-template-areas: "foto6" "foto7";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+#info {
+  grid-area: "foto6";
+  font-size: 80px;
+}
+
+#maps {
+  grid-area: "foto7";
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  align-items: center;
+  transition: height 2s;
+  transition: width 2s;
+}
+
+#maps:hover {
+  height: 650px;
+  width: 700px;
+}
+
+footer {
+  margin-top: -50px;
+  background-color: rgb(105, 49, 105);
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border: 2px solid;
+  text-align: center;
+}
+
+#gracias {
+  color: black;
+  font-size: 50px;
+}
+
+#parrafofooter {
+  color: black;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*TIENDA*/
+
+#losmasvendido {
+  text-decoration: underline;
+  letter-spacing: 1cm;
+  line-height: 1cm;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(10, 10, 10);
+}
+
+#camperacuerored {
+  display: flex;
+  flex-direction: center;
+  width: 50%;
+  height: 50%;
+  padding-left: 400px;
+}
+
+#ropachicos {
+  background-color: rgb(7, 6, 7);
+  display: grid;
+  height: 800px;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-areas:
+    "foto1 foto2"
+    "foto3 foto4"
+    "foto5 foto6";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+#ropaparachicostitulo {
+  text-align: center;
+  font-style: unset;
+  letter-spacing: 10px;
+  text-decoration: underline;
+}
+
+/*galeria*/
+
+.estasengaleria {
+  margin-top: -20px;
+  margin-bottom: -60px;
+  text-align: center;
+  letter-spacing: 1cm;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+
+#galeriauno {
+  background-color: rgb(7, 6, 7);
+  display: grid;
+  height: 1000px;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-areas:
+    "foto1 foto2"
+    "foto3 foto4"
+    "foto5 foto6";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+/*contacto*/
+
+#estasencontacto {
+  margin-top: -50px;
+  text-align: center;
+  letter-spacing: 1cm;
+  line-height: 1cm;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+
+#subtitulocontacto {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-size: 40px;
+  text-align: center;
+}
+
+#contactomapas {
+  background-color: rgb (7, 6, 7);
+  display: grid;
+  height: 950px;
+  grid-template-columns: 45% 45%;
+  grid-template-areas: "foto6" "foto7";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.container {
+  font-size: 100px;
+}
+
+/*ofertas*/
+
+#estasenofertas {
+  margin-top: -50px;
+  text-align: center;
+  letter-spacing: 1cm;
+  line-height: 1cm;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  padding-left: 70px;
+}
+
+#blackfridey {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+#porcentajes {
+  color: red;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+#blackfrideyuno {
+  background-color: rgb (7, 6, 7);
+  display: grid;
+  height: 800px;
+  grid-template-columns: 35% 35%;
+  grid-template-areas: "foto1 foto2";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+#blackfrideydos {
+  background-color: rgb (7, 6, 7);
+  display: grid;
+  height: 950px;
+  grid-template-columns: 35% 35%;
+  grid-template-areas: "foto1 foto2";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
